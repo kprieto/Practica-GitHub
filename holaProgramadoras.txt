@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 Contenido de archivo
 
 Hola como estas?
+=======
+Hola Programadoras de JavaScript!!!
+>>>>>>> 5f7a82963fce47b285c3b352fc8ab752e33ae2ba
