@@ -1,0 +1,45 @@
+andre@Andrea MINGW64 ~/desktop/Practica-GitHub (main)
+$ git push origin main
+To github.com:kprieto/Practica-GitHub.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'github.com:kprieto/Practica-GitHub.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+andre@Andrea MINGW64 ~/desktop/Practica-GitHub (main)
+$ git pull origin main
+remote: Enumerating objects: 14, done.
+remote: Counting objects: 100% (11/11), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 8 (delta 3), reused 7 (delta 2), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 801 bytes | 47.00 KiB/s, done.
+From github.com:kprieto/Practica-GitHub
+ * branch            main       -> FETCH_HEAD
+   978b32e..5f7a829  main       -> origin/main
+Auto-merging holaProgramadoras.txt
+CONFLICT (content): Merge conflict in holaProgramadoras.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+andre@Andrea MINGW64 ~/desktop/Practica-GitHub (main|MERGING)
+$ git add holaProgramadoras.txt
+
+andre@Andrea MINGW64 ~/desktop/Practica-GitHub (main|MERGING)
+$ git commit -m "resolver conflicto en holaProgramadoras.txt"
+[main 42c81ad] resolver conflicto en holaProgramadoras.txt
+
+andre@Andrea MINGW64 ~/desktop/Practica-GitHub (main)
+$ git push
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 687 bytes | 687.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To github.com:kprieto/Practica-GitHub.git
+   5f7a829..42c81ad  main -> main
+
+
